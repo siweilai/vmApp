@@ -1,0 +1,24 @@
+<!--头部-->
+<view class="head">
+  <view class="head_left">
+    <image src="/imgs/device.png"  class="head_left_logo"></image>
+  </view>
+  <view class="head_right">
+    <text class="head_rigth_text1">设备编号：{{deviceNo}}\n</text>
+    <text class="head_rigth_text2">设备地址：{{deviceAdd}}</text>
+  </view>
+</view>
+<!--全部商品-->
+<view class='content_title'>
+  <view>全部商品</view>
+</view>
+<view class='hotgoodcontainer'>
+  <view class='gooditem' wx:for="{{products}}" wx:for-index="idx" wx:for-item="good" wx:key>
+    <view class='imgview'>
+      <image class='product' src='{{good.url}}' bindtap="buy" data-id="{{good.id}}"/>
+      <image wx:if="{{good.status == 0}}" class='sellout' src="/imgs/sell-out.png"/>
+    </view>
+    <view>{{good.name}}{{good.volume}}ml</view>
+    <view class="text2">￥{{good.charge}}</view>
+  </view>
+</view>

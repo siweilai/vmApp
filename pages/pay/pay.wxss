@@ -1,0 +1,36 @@
+/* pages/pay/pay.wxss */
+.separator{
+  width:100%;
+  height: 5px;
+  background-color: #f3f3f3;
+  margin:10px auto;
+}
+.description{
+  margin-top: 10px;
+  padding: 0 10px;
+  text-align: center;
+
+}
+.description-name{
+}
+.description-charge{
+  color: #fe7300;
+}
+.content_list{
+  display: flex;
+  height: 34px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 13px;
+  font-size: 14px;
+  color: rgba(0, 0,0, .7);
+  border-bottom: 1px solid #e2e2e3;
+}
+.button{
+  margin: 50px 50px;
+}
+.btn_pay{
+  border-radius: 10px;
+  background-color: #fe7300;
+  color: white;
+}

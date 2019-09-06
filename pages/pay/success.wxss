@@ -1,0 +1,22 @@
+/* pages/pay/success.wxss */
+.success_imgs{
+  width:100%;
+  height: 220px;
+  /* background-color: blueviolet; */
+  text-align: center;
+}
+.success_text{
+  /* background-color: royalblue; */
+  text-align: center;
+}
+.success_return{
+  height: 40px;
+  margin:20px 40px;
+  color: white;
+  font-size: 20px;
+  padding-top: 15px;
+  text-align: center;
+  border: 1px solid #fe7300;
+  background-color: #fe7300;
+  border-radius: 10px;
+}

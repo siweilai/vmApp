@@ -1,0 +1,10 @@
+<!--pages/pay/success.wxml-->
+<view class="success_imgs">
+  <image src="/imgs/succe.png" mode="aspectFit"></image>
+</view>
+<view class="success_text">
+  <text>支付成功</text>
+</view>
+<view class="success_return">
+  <navigator url="/pages/index/index" open-type="switchTab">返回商品页</navigator>
+</view>

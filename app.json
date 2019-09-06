@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/person/person",
+    "pages/pay/pay",
+    "pages/pay/success"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "商品中心",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#999999",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "商品中心",
+        "iconPath": "imgs/index.png",
+        "selectedIconPath": "imgs/index.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "个人中心",
+        "iconPath": "imgs/person.png",
+        "selectedIconPath": "imgs/person.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap27.json"
+}
