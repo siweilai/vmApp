@@ -1,2 +1,8 @@
 <!--pages/person/person.wxml-->
-<text>pages/person/person.wxml</text>
+<view class="head">
+  <image src='{{avatarUrl}}'></image>
+  <view class='name'>{{nickName}}</view>
+</view>
+<view class="button">
+  <button class="btn" bindgetuserinfo="getUserInfo" open-type='getUserInfo' wx:if="{{!userInfo.avatarUrl}}">登陆</button>
+</view>

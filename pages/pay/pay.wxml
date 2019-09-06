@@ -1,9 +1,9 @@
 <!--pages/pay/pay.wxml-->
 <view class="pic">
-  <image src="/imgs/coca.jpg" mode="aspectFit"></image>
+  <image src="{{url}}" mode="aspectFit"></image>
 </view>
 <view class="description">
-  <text class="description-name">可口可乐300ml</text>
+  <text class="description-name">{{name}}300ml</text>
 </view>
 <view class="description">
    <text class="description-charge">￥2.5</text>
