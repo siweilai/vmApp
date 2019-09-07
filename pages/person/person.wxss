@@ -1,25 +1,15 @@
 /* pages/person/person.wxss */
-
-.head {
-  width: 95%;
-  height: 300rpx;
-  margin: 15rpx auto;
-  border-radius: 25rpx;
-  background: white;
-  display: flex;
-  position: relative;
+.userinfo{
+  text-align: center;
 }
-
-.head image {
+.userinfo-avatar {
   width: 140rpx;
   height: 140rpx;
   border-radius: 50%;
   margin-top: 45rpx;
-  margin-left: 45rpx;
-  border:1px solid #e2e2e3;
 }
 
-.name {
+.userinfo-nickname {
   width: 300rpx;
   height: 80rpx;
   margin-top: 50rpx;
@@ -27,7 +17,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border: 1px solid #e2e2e3;
 }
 .button{
   margin: 50px 50px;
