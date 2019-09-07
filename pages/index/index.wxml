@@ -15,7 +15,7 @@
 <view class='hotgoodcontainer'>
   <view class='gooditem' wx:for="{{products}}" wx:for-index="idx" wx:for-item="good" wx:key>
     <view class='imgview'>
-      <image class='product' src='{{good.url}}' bindtap="buy" data-id="{{good.id}}"/>
+      <image class='product' src='{{good.url}}'  bindtap="buy"  data-id="{{good.id}}" data-status="{{good.status}}"/>
       <image wx:if="{{good.status == 0}}" class='sellout' src="/imgs/sell-out.png"/>
     </view>
     <view>{{good.name}}{{good.volume}}ml</view>

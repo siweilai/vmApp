@@ -9,8 +9,9 @@ Page({
     name:'',
     voluem:'',
     charge:0,
+    count:0
   },
-
+//支付完成
   finish: function () {
     wx.navigateTo({
       url: '/pages/pay/success',
@@ -19,7 +20,30 @@ Page({
       complete: function (res) { },
     })
   },
-
+//减少数量
+  reduce: function (){
+    const that = this;
+    let count = this.data.count;
+    if( count > 0){
+      that.setData({
+        count: count-1
+      })
+    }else{
+      wx.showToast({
+        title: "购买数量必须大于1",
+        icon: 'none',
+        duration: 2000
+      });
+    }
+  },
+//增加数量
+  add: function (){
+    const that = this;
+    let count = this.data.count;
+    that.setData({
+      count: count+1
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

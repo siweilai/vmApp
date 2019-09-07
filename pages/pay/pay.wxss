@@ -9,9 +9,6 @@
   margin-top: 10px;
   padding: 0 10px;
   text-align: center;
-
-}
-.description-name{
 }
 .description-charge{
   color: #fe7300;
@@ -34,3 +31,32 @@
   background-color: #fe7300;
   color: white;
 }
+.cart{
+  width:400rpx;
+  height:100rpx;
+  margin-top:50rpx;
+  margin-left: 200rpx;
+  /* background-color: rebeccapurple; */
+}
+.imgreduce{
+  height: 50rpx;
+  width:50rpx;
+  margin-left: 30rpx;
+  margin-right: 20rpx;
+  margin-bottom: -10rpx;
+}
+.imgadd{
+  height: 50rpx;
+  width:50rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-bottom: -10rpx;
+}
+.amount{
+  margin-left: 190rpx;
+  padding: 0 10px;
+}
+.amount text{
+  color: #fe7300;
+}
+

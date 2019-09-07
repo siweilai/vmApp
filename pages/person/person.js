@@ -12,7 +12,7 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
-  
+  //跳转
   getUserInfo: function (e) {
     console.log("app",app)
     app.globalData.userInfo = e.detail.userInfo
@@ -20,6 +20,11 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+    setTimeout(function(){
+      wx.switchTab({
+        url: '/pages/index/index',
+      })
+    },1000)
   },
   /**
    * 生命周期函数--监听页面加载

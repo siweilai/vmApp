@@ -6,9 +6,9 @@
   <text class="description-name">{{name}}300ml</text>
 </view>
 <view class="description">
-   <text class="description-charge">￥2.5</text>
+   单价：<text class="description-charge">￥2.5</text>
 </view>
- <view class='separator'></view>
+ <!-- <view class='separator'></view>
  <view class='content_list'>
   <view class='list_key'>可用优惠券：</view>  
   <view class='list_value'>暂无</view>  
@@ -20,6 +20,15 @@
  <view class='content_list'>
   <view class='list_key'>实付金额：</view>  
   <view class='list_value'>暂无</view>  
+</view> -->
+<view class="cart">
+  <text style="color:#fe7300">购买数量：</text>
+  <image src="/imgs/reduce.png" class="imgreduce" bindtap="reduce"></image>
+  <text class="count">{{count}}</text>
+  <image src="/imgs/add.png" class="imgadd" bindtap="add"></image>
+</view>
+<view class="amount">
+   <text>应付金额：￥2.5</text>
 </view>
 <view class="button">
   <button class="btn_pay" bindtap="finish">立即支付</button>
